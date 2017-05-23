@@ -10,7 +10,7 @@ namespace BinaryStudioAcademy\Task1;
 
 class Pickachu implements Pokemon
 {
-    private $name = "Pikachu";
+    private $name = "Pickachu";
 
     /**
      * @return string

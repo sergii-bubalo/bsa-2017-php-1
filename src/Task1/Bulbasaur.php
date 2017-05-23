@@ -13,6 +13,8 @@ class Bulbasaur implements Pokemon
     private $name = "Bulbasaur";
 
     /**
+     * Get pokemon's name
+     *
      * @return string
      */
     public function getName(): string
@@ -20,19 +22,22 @@ class Bulbasaur implements Pokemon
         return $this->name;
     }
 
-    /**
-     * @param string $name
-     */
-    public function setName(string $name)
-    {
-        $this->name = $name;
-    }
 
+    /**
+     * Return battle cry of Bulbasaur
+     *
+     * @return string
+     */
     public function battleCry(): string
     {
         return $this->getName() . ": Bool bool!";
     }
 
+    /**
+     * Return image URL of Bulbasaur
+     *
+     * @return string
+     */
     public function imageUrl(): string
     {
         return "https://img.pokemondb.net/artwork/bulbasaur.jpg";

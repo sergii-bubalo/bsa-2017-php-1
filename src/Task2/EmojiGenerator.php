@@ -14,18 +14,15 @@ class EmojiGenerator
         "\u{1F602}",
     ];
 
+	public function getEmojis(): array
+	{
+		return $this->emojis;
+	}
+
     public function generate()
     {
         foreach ($this->getEmojis() as $emoji) {
             yield $emoji;
         }
-    }
-
-    /**
-     * @return array
-     */
-    public function getEmojis(): array
-    {
-        return $this->emojis;
     }
 }

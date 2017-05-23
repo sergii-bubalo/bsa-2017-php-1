@@ -10,25 +10,12 @@ namespace BinaryStudioAcademy\Task1;
 
 class Slowpoke implements Pokemon
 {
-
     private $name = "Slowpoke";
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
-
-    /**
-     * @param string $name
-     */
-    public function setName(string $name)
-    {
-        $this->name = $name;
-    }
-
 
     public function battleCry(): string
     {
